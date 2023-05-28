@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    color: gray; 
+    font-family:'counter',serif;
+    margin: 5px;
+   
+} 
+a {
+    text-decoration:none;
+    color:inherit;
+    }
+body {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    background-color:beige;
+   font-family: 'lora' serif;
+   text-align: center;
+}
+header {
+    background-color:black;
+    height:66px;
+}
+header * {
+    color:white; 
+ }
+
+header .logo { 
+    float:left;
+    height: inherit;
+    margin-left: 2cm;       
+}
+header .logo-text {    
+    margin: 10px;
+    font-family: 'candal' , serif; 
+}
+header .logo-text span {
+    color:orangered;
+}
+header  ul {
+    padding: 0px;
+    margin:0px;
+    margin-top: 7px;
+    list-style: none;
+    float:right;
+    
+}
+header ul li {
+float : left;
+position: relative;
+}
+
+header ul li ul  {    
+    position: absolute;
+    top: 61px;
+    right:0px;
+    width:110px;
+    display:none;
+    z-index:  88888;
+}
+header ul li:hover ul {
+    display:block;
+}
+header ul li ul li { 
+    width: 100% ; 
+    
+} 
+header ul li ul li a {
+    padding:10px; 
+    color:black;
+    background: white;
+}
+header ul li ul li a.logout {
+    color:red;
+}
+header ul li ul li a:hover {
+    background:lightslategray;
+}
+header ul li a {
+    display: block;
+padding: 21px;
+font: size 1.1em;
+text-decoration: none;
+}
+
+header ul li a:hover {
+    background-color: darkslategrey;
+    transition: 0.1s;
+}
+
+header .menu-toggle {
+display: none;
+} 
+
+.heading1 h1{
+   color: orangered;
+}
+body #button {
+    text-align: center;
+    align-items: center;
+}
+
+.explanation {
+    width :80%;
+    height: 50%; 
+  
+    display: inline-block;
+    text-align: center;
+}
+.imgs img{
+    
+    width:20% ; 
+    height : 100% ; 
+    float:left ; 
+    background-color: green;
+}
+.payment {
+    display:block;
+    float:right; 
+    background-color: gold ;
+    width: 25% ; 
+    font-weight:bolder; 
+    color: green;
+    margin-top : -15vmin;
+
+}
+#dietplan {
+    text-align: center;
+    width:50%;
+    margin-left: 25%;
+    color: blue;
+    font-weight: bolder;
+       
+}
+.bookinglink  {
+   background: rgb(220, 105, 105);
+  
+}
+.bookinglink a:hover  {
+   background-color: aqua;
+}
+
+
+
+
+
+
+ /* media queries */ 
+@media only screen and (max-width:750px) {
+    header {
+        position: static;
+        display: block;
+        height: 150px;;
+    }
+    header  ul {
+        position: relative;
+       width:100%;
+       background-color: black;
+       min-height: 30%;   
+       max-height:30%;
+       display: inline-flex;
+       
+       margin-top: -12%;
+                
+    }
+    .post-slider .post-wrapper {
+      
+        height:30%; 
+       
+    }
+    .showing{
+        max-height: 100em;
+    }
+    header ul li {      
+        width: 100%;
+        }
+    header ul li ul  {    
+            position: relative;              
+            width:100%; 
+            display:none;
+            z-index:  88888;
+        }
+        header ul li:hover ul  {    
+          margin-top: -10vmin ;
+            display:block;
+           
+        }
+        header ul li ul li a {
+    padding:10px; 
+    color:white;
+    background: darkcyan;
+    padding-left: 60px;
+}
+header ul li ul li a.logout {
+    color:red;
+}
+header .menu-toggle {
+    display:block;
+    position: absolute;
+     right: 20px; 
+    top: 20px;
+    font-size: 1.9em;
+}
+header .logo { 
+   margin-left: 0.5em;       
+} 
+
+.explanation {
+  
+    width :80%;
+    height: 50%;   
+    display:inline-block;
+    text-align: center;
+}
+.imgs {
+    width: 100%;
+    margin-left: 3vmin;
+}
+.imgs img{
+    
+    width:60% ; 
+    height : 60% ; 
+    
+    background-color: green;
+}
+.payment {
+    display: block;
+   
+    background-color: gold ;
+    width: 100% ; 
+    font-weight:bolder; 
+    color: green;
+    margin-top: 10px;
+
+}
+#dietplan {
+    display: block;
+    text-align: center;
+    width:100%;
+   margin-left:3vmin ;
+    color: blue;
+    font-weight: bolder;
+       
+} } 

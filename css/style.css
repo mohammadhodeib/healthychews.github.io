@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    color: gray; 
+    font-family:'counter',serif;
+    margin: 5px;
+}
+a {
+    text-decoration:none;
+    color:inherit;
+    }
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color:beige;
+   font-family: 'lora' serif;
+}
+header {
+    background-color:black;
+    height:66px;
+}
+header * {
+    color:white; 
+ }
+
+header .logo { 
+    float:left;
+    height: inherit;
+    margin-left: 2cm;       
+}
+header .logo-text {    
+    margin: 10px;
+    font-family: 'candal' , serif; 
+}
+header .logo-text span {
+    color:orangered;
+}
+header  ul {
+    padding: 0px;
+    margin:0px;
+    margin-top: 7px;
+    list-style: none;
+    float:right;
+    
+}
+header ul li {
+float : left;
+position: relative;
+}
+
+header ul li ul  {    
+    position: absolute;
+    top: 61px;
+    right:0px;
+    width:110px;
+    display:none;
+    z-index:  88888;
+}
+header ul li:hover ul {
+    display:block;
+}
+header ul li ul li { 
+    width: 100% ; 
+    
+} 
+header ul li ul li a {
+    padding:10px; 
+    color:black;
+    background: white;
+}
+header ul li ul li a.logout {
+    color:red;
+}
+header ul li ul li a:hover {
+    background:lightslategray;
+}
+header ul li a {
+    display: block;
+padding: 21px;
+font: size 1.1em;
+text-decoration: none;
+}
+
+header ul li a:hover {
+    background-color: darkslategrey;
+    transition: 0.1s;
+}
+
+header .menu-toggle {
+display: none;
+}
+.page-wrapper a:hover {
+    cursor: pointer;
+    color: #008b8b;
+ }
+
+
+/* post slider */ 
+.post-slider {
+    position:relative;
+    
+}
+.post-slider .slider-title { 
+    text-align: center; 
+    margin: 30px auto; 
+    color:rgb(116, 116, 1);
+    box-shadow: 2em 2em 2em 2em lightgoldenrodyellow;
+    background-color:lightyellow;
+
+
+}
+.post-slider .next {
+    position:absolute;
+    top: 50%;
+    right: 30px; 
+    size: 4em; 
+    color:royalblue;
+    cursor:pointer; 
+    
+}
+.post-slider .prev {
+    position:absolute;
+    top: 50%;
+    left: 30px; 
+    size: 4em; 
+    color:royalblue;
+    cursor:pointer;
+    
+}
+.post-slider .post-wrapper {
+    width:84%;
+    height:350px; 
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+ .post-slider .post-wrapper .post {
+    width: 25vmax;
+    height: 20vmin;
+    margin:0px 10px;
+    display:inline-block;
+    
+    background:beige;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem rgb(63, 60, 60) ;
+    
+ }
+ .post-slider .post-wrapper .post .post-info {
+    height: 100px;
+    
+    width:100%;
+    text-align: center;
+    background-color: beige;
+    box-shadow: 1rem 1rem 1rem 1rem beige; 
+}
+
+ .post-slider .post-wrapper .post .slider-image {
+    width:100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+ }
+
+/* tiktokers */ 
+.tiktokers {
+    cursor: initial;
+    margin-top: 10vmin;
+    display:inline-block;
+    width:100%; 
+    height: 200px;
+    overflow-block: hide;
+}
+.tiktokers .tiktoker .tiktoker-image{    
+    height:20%;
+    width:40%; 
+    box-shadow: 1 em 1em 1em -1em grey;
+    border-radius: 20px;
+    margin-left:3% ;
+}
+.tiktokers .tiktoker{
+    width: 39vmax;
+    height: 35vmax;
+    margin-left:3vmax; margin-right:3vmax ; 
+    display:inline-flex;
+    padding: 3vmax; 
+    
+}
+.firsttiktoker {
+    width:30% ; 
+    height: 100% ; 
+    margin-right: 10%; 
+}
+
+ .postquestion input {
+max-width: 110%;
+max-height: 70%;
+}
+#textquestion {
+    min-height: 100px;
+}
+.text-tiktoker {
+    max-width: 15vmax;
+    max-height: 30vmax;
+    
+    }
+    #demo h1{
+        color:red; 
+    }
+.tiktokers .listofquestions{
+    
+    width: 50%;
+    height: 100%;
+    margin-left:3vmax; margin-right:3vmax ;
+    display:inline-block;
+    border-color: rgb(122, 41, 110);
+    border-style: solid;
+    mask-border-width: 2px;
+}
+.tiktokers .fa-tiktok{
+    border:1px rosybrown solid ; 
+    float:right;
+     font-size: 1.8em;
+     margin-right:20px;
+}
+.textarea{
+    border:grey;
+    background-color: pink ;
+    width: 200px; 
+    height: 80px; 
+    margin-top: 15px;
+     padding: 10px;    
+     border-radius:10px; 
+}
+.textarea:hover{
+    border:solid 3px black; 
+    
+    
+}
+.output {
+    background-color: lightgreen;
+    width: 30vmin ;
+    height: 40vmin ; 
+}
+
+
+
+
+/* media queries */ 
+@media only screen and (max-width:750px) {
+    header {
+        position: static;
+        display: block;
+        height: 150px;;
+    }
+    header  ul {
+        position: relative;
+       width:100%;
+       background-color: black;
+       min-height: 30%;   
+       max-height:30%;
+       display: inline-flex;
+       
+       margin-top: -12%;
+                
+    }
+    .post-slider .post-wrapper {
+      
+        height:30%; 
+       
+    }
+    .showing{
+        max-height: 100em;
+    }
+    header ul li {      
+        width: 100%;
+        }
+    header ul li ul  {    
+            position: relative;              
+            width:100%; 
+            display:none;
+            z-index:  88888;
+        }
+        header ul li:hover ul  {    
+          margin-top: -10vmin ;
+            display:block;
+           
+        }
+        header ul li ul li a {
+    padding:10px; 
+    color:white;
+    background: darkcyan;
+    padding-left: 60px;
+}
+header ul li ul li a.logout {
+    color:red;
+}
+header .menu-toggle {
+    display:block;
+    position: absolute;
+     right: 20px; 
+    top: 20px;
+    font-size: 1.9em;
+}
+header .logo { 
+   margin-left: 0.5em;       
+}
+.tiktokers {
+    display: block;
+   
+}
+ .tiktoker{
+    width: 100%;
+    min-width: 99%;
+    height: 35vmax;
+    margin-left:3vmax; margin-right:3vmax ; 
+    margin-bottom: 20vmax;
+    display:inline-flex;
+   
+}
+.firsttiktoker {
+    width:30% ; 
+    height: 100% ; 
+}
+ .input {
+max-width: 15vmax;
+max-height: 30vmax;
+
+}
+
+.tiktokers .listofquestions{
+    
+    width: 50%;
+    height: 100%;
+    margin-left:7vmax; margin-right:3vmax ;
+    display:inline-block;
+    border-color: rgb(122, 41, 110);
+    border-style: solid;
+    mask-border-width: 2px;
+    margin-top: 5%;
+    
+}
+    
+}
+
+
+.tiktok-embed>section:before {
+    display:none !important; 
+}
+
+

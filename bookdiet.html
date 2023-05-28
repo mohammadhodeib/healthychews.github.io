@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book a diet</title>
+    <link rel="stylesheet" href="css/style3.css" /> 
+    <!-- font awesome !-->  
+    <script src="https://kit.fontawesome.com/941fcf72e2.js" crossorigin="anonymous"></script>
+    <title>HealthyChews</title>
+    <!-- google fonts-->    
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+    <script src="js/script2.js" ></script>
+
+</head>
+<header>
+    <div class="logo">
+    <h1 class="logo-text"><span>Healthy</span>Chews</h1>
+    </div>
+    <i class="fa fa-bars menu-toggle" ></i>
+<ul class="nav">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="C://userswww/About.html">About </a></li>
+    <li><a href="dietsinfo.html">diets & Services</a></li>        
+    <li>     
+    <a href=#>
+        <i class="fa fa-user"></i>
+        iman
+        <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>   
+    </a>
+    <ul> 
+        <li><a href="myprofile.html">my profile </a> </li> 
+        <li><a href="#" class="logout" > logout </a> </a> </li>
+    <ul>  
+    </li>      
+</ul>
+</header>
+<body onload="fill()">
+  <div class="heading1"><h1> start your diet </h1>  </div>
+   <h2> choose the diet type and enter needed information </h2>
+   <br> <br>
+    
+    <label for="selection"> diet type </label>
+    <select name="diettype" id="selection" required>  </select>
+    <br> <br>
+    <label for="age"> your age </label>
+    <input name="age" id="age" type="number" max="10" required></select>
+    <br> <br>
+    <label for="gender"> your gender </label>
+    <select name="gender" id="gender"  required>
+        <option> male</option>
+        <option > female</option>
+    </select>
+    <label for="weight">your weight in kg</label>
+    <input name="weight" id="weight" type="number" max="300"/>
+    <br> <br>
+    <button onclick="explain()"> get my diet </button>
+    <br> <br> 
+    <div class="explanation">
+        <div class="imgs"><img id="dietphoto" >  </div>
+        <p id="dietplan"> always think positive and be motivated  </p>
+        <p class="payment"> <span id="amount"> </span></p>
+        <div id="booking"> <a class="bookinglink" id="bookinglink1" href="dietsinfo.html" >  </a> </div>
+        
+    </div>
+</body>
+</html>

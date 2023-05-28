@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome !-->  
+    <script src="https://kit.fontawesome.com/941fcf72e2.js" crossorigin="anonymous"></script>
+    <title>HealthyChews</title>
+    <!-- google fonts-->    
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+    <!-- custom styling !-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+        <h1 class="logo-text"><span>Healthy</span>Chews</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle" ></i>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="C://userswww/About.html">About </a></li>
+        <li><a href="dietsinfo.html">diets & Services</a></li>        
+        <li>     
+        <a href=#>
+            <i class="fa fa-user"></i>
+            iman
+            <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>   
+        </a>
+        <ul> 
+            <li><a href="myprofile.html">my profile </a> </li> 
+            <li><a href="#" class="logout" > logout </a> </a> </li>
+        <ul>  
+        </li>      
+    </ul>
+    </header>
+    <!-- page wrapper-->
+    <div class="page-wrapper"> 
+        <!-- post slider-->
+    <div class="post-slider">
+        <h1 class="slider-title" > choices for healthy life </h1>
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+        <div class="post-wrapper">
+           <div class="post">
+            <img src="images/askfordiet.jpg" alt="" class="slider-image">
+            &nbsp; 
+            <div class="post-info">
+                <h3><a href="bookdiet.html">  customized diet</h3>
+                </div>
+            </div>
+
+           <div class="post">
+            <img src="images/gethealthytips.png" class="slider-image">
+            &nbsp; 
+            <div class="post-info">
+                <h3><a href="single.html">  healthy tips</h3>
+                </div>
+            </div>
+
+             <div class="post">
+             <img src="images/orderfood.jpg" alt="" class="slider-image">
+                    &nbsp; 
+                    <div class="post-info">
+                          <h3><a href="ordermeal.html">  order your meal </h3>  
+                            
+                            
+            </div>
+
+           </div>
+
+           <div class="post">
+            <img src="images/restaurantshealthy.jpg" alt="" class="slider-image">
+            &nbsp; 
+            <div class="post-info">
+                <h3><a href="single.html"> healthy restaurant next to you  </h3>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="images/shareyourrecipes.png" alt="" class="slider-image">
+                &nbsp; 
+                <div class="post-info">
+                    <h3><a href="single.html"> the blog where you share your recipes</h3>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src="images/workout.jpg" alt="" class="slider-image">
+                    &nbsp; 
+                    <div class="post-info">
+                        <h3><a href="single.html"> let's get some workout</h3>
+                        </div>
+                    </div>
+        
+    </div>
+    </div> 
+
+
+        <!-- post slider-->
+    </div> 
+
+    <!-- page wrapper-->
+<br> <br> <br> <br>
+    <!-- tiktokers -->
+<div class="tiktokers">
+    <div class="tiktoker">
+        <div class="firsttiktoker"> 
+        <img src="images/tiktoker-zoe-laverne.webp" alt="" class="tiktoker-image">
+        <i class='fab fa-tiktok'><!--fa-tiktok--></i>
+            <label for="textquestion1"> question </label>   
+           <input  id="textquestion1" type="text" name="textquestion" placeholder="place me a question " >
+           <label for="name1" > name </label>
+            <input id="name1" type="text" name="name" placeholder="Name" required >           
+            <button id="button1" value="post question" onclick="post1()"> post </button>
+         </div>      
+          <p class="output" id="output1"> </p>
+   </div>       
+   <script>
+      let enteredname = document.getElementById('name1'); 
+  let enteredquestion = document.getElementById('textquestion1') ; 
+  let button = document.getElementById('button1'); 
+  let post = document.getElementById('output1');  
+   
+  button1.addEventListener('click', question1); 
+  function question1(button1) {   
+        button1.preventDefault(); 
+
+    post.innerHTML = enteredname.value + " " +  enteredquestion.value ;   
+     } 
+   </script>   
+    
+ 
+
+    <div class="tiktoker">
+        <div class="firsttiktoker"> 
+        <img src="images/rosy.jpg " class="tiktoker-image">
+        <i class='fab fa-tiktok'><!--fa-tiktok--></i>
+        <input  id="textquestion2" type="text" name="textquestion2">
+        <label for="name2" > name </label>
+         <input id="name2" type="text" name="name2" placeholder="Name" required >           
+         <button id="button2" value="post question" onclick="post2()"> post </button>
+         </div>      
+          <p class="output" id="output2"> </p>
+   </div>          
+    </div> <script>  
+    let enteredname2 = document.getElementById('name2'); 
+    let enteredquestion2 = document.getElementById('textquestion2') ; 
+    let button2 = document.getElementById('button2'); 
+    let post2 = document.getElementById('output2');  
+     
+    button2.addEventListener('click', question2); 
+    function question2(button2) {   
+        button2.preventDefault(); 
+
+    post2.innerHTML = enteredname2.value + " " +  enteredquestion2.value ;   
+     } 
+    </script>
+  
+
+
+
+
+     
+    
+
+
+
+     <!-- tiktokers-->
+    
+    <!-- jQuery !--> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- slick carousel-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- customScript -->
+    <script src="js/scripts.js"></script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

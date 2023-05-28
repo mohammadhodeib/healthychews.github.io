@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style4.css" />    
+       <!-- font awesome !-->  
+     <script src="https://kit.fontawesome.com/941fcf72e2.js" crossorigin="anonymous"></script>
+      <!-- google fonts-->  
+<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+<script src="js/script3.js" ></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <h1 class="logo-text"><span>Healthy</span>Chews</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle" ></i>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="C://userswww/About.html">About </a></li>
+        <li><a href="dietsinfo.html">diets & Services</a></li>        
+        <li>     
+        <a href=#>
+            <i class="fa fa-user"></i>
+            iman
+            <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>   
+        </a>
+        <ul> 
+            <li><a href="myprofile.html">my profile </a> </li> 
+            <li><a href="#" class="logout" > logout </a> </a> </li>
+        <ul>  
+        </li>      
+    </ul>
+    </header>
+
+    <div class="info">
+        <label id="labelmealtype" for="mealtype"> meal type </label>
+        <select id="mealtype"> 
+            <option value="vegan"> vegan </option>
+            <option value="meat"> meat </option>
+            <option value="chicken"> chicken </option>
+            <option value="all"> all </option>
+        </select>
+        <br> <br> 
+    <label for="calories"> how much calories per meal </label>
+     <input type="number" id="calories" min="300"> 
+     <br> <br> 
+     <label for="restriction"> selectfifth what you don't wish to include in your meal </label>
+     <select name="restriction" id="restriction">
+        <option > salt </option>
+        <option > sugar </option>
+        <option > milk </option>
+        <option > creme </option>
+        <option > butter </option>
+        <option> chicken </option>
+        <option > meat </option>
+        <option > wheat </option>
+        <option >basil </option>
+        <option >olive </option>
+        <option >tomato </option>
+        <option> garlic</option>
+     </select>
+     <br> <br>
+     <button id="submit" onclick="composer()"> get menu choices </button>
+
+
+    </div>
+    <div class="suggestion">
+<p id="suggestion1"> 
+
+</p>
+<div class="photos">
+    <img class="images" id="first" src="" alt="">
+    <img class="images"id="second" src="" alt="">   
+    <img class="images"id="third" src="" alt="">
+    <img class="images"id="fourth" src="" alt="">
+    <img class="images"id="fifth" src="" alt="">
+</div>
+<div class="portions">
+   <h3> main component weight in g <p id="portion1"> </p></h3> 
+ <h3> second component weight    <p id="portion2">  </p></h3> 
+ <h3> third component weight   <p id="portion3"> </p></h3>
+    <h3> fourth component weight  <p id="portion4"></p></h3> 
+    <h3> fifth component weight <p id="portion5"> </p></h3>
+
+</div>
+    </div>
+</body>
+</html>
